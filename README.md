@@ -888,4 +888,4 @@ Testing
 
 ## Kendala
 1. Membuat command bash
-2. Pada soal 17 terjadi error
+2. Pada soal 17 terjadi error dimana aplikasi lynx tidak dapat menampilkan gambar
