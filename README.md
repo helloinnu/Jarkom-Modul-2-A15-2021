@@ -1,6 +1,6 @@
 # Jarkom-Modul-2-A15-2021
 
-Laporan Resmi 2 Modul 2 Jaringan Komputer
+Laporan Resmi Modul 2 Jaringan Komputer
 
 ### Anggota Kelompok :
 |NRP            |Nama        |
@@ -89,6 +89,8 @@ Sekarang semua `node` sudah terhubung dan bisa mengakses internet.
 
 ![1.2](img/1.2.png)
 
+<br>
+
 ### Nomor 2
 Luffy ingin menghubungi Franky yang berada di `EniesLobby` dengan denden mushi. Kalian diminta Luffy untuk membuat website utama dengan mengakses `franky.yyy.com` dengan alias `www.franky.yyy.com` pada folder kaizoku.
 
@@ -142,6 +144,8 @@ Testing
 - Ping ke `franky.a15.com` dan `www.franky.a15.com`
 
   ![2.1](img/2.1.png)
+  
+<br>
 
 ### Nomor 3
 Setelah itu buat subdomain `super.franky.yyy.com` dengan alias `www.super.franky.yyy.com` yang diatur DNS nya di EniesLobby dan mengarah ke Skypie.
@@ -176,6 +180,8 @@ Testing
 - Ping dari `loguetown` ke `super.franky.a15.com` dan `www.super.franky.a15.com`
 
   ![3.1](img/3.1.png)
+
+<br>
 
 ## Nomor 4
 Buat juga reverse domain untuk domain utama.
@@ -217,6 +223,8 @@ Testing
 - Melakukan pengecekan dengan command `host -t PTR 192.176.2.2`
 
   ![4.1](img/4.1.png)
+
+<br>
 
 ## Nomor 5
 Supaya tetap bisa menghubungi Franky jika server EniesLobby rusak, maka buat Water7 sebagai DNS Slave untuk domain utama.
@@ -266,6 +274,8 @@ Testing
 - Ping dari `loguetown` ke `franky.a15.com`
 
   ![5.1](img/5.1.png)
+
+<br>
 
 ### Nomor 6
 Setelah itu terdapat subdomain `mecha.franky.yyy.com` dengan alias `www.mecha.franky.yyy.com` yang didelegasikan dari EniesLobby ke Water7 dengan IP menuju ke Skypie dalam folder sunnygo.
@@ -369,6 +379,8 @@ Testing
 
   ![6.1](img/6.1.png)
 
+<br>
+
 ### Nomor 7
 Untuk memperlancar komunikasi Luffy dan rekannya, dibuatkan subdomain melalui Water7 dengan nama `general.mecha.franky.yyy.com` dengan alias `www.general.mecha.franky.yyy.com` yang mengarah ke Skypie.
 
@@ -402,6 +414,8 @@ Testing
 - Ping dari `loguetown` ke `general.mecha.franky.a15.com` dan `www.general.mecha.franky.a15.com`
 
   ![7.1](img/7.1.png)
+
+<br>
 
 ### Nomor 8
 Setelah melakukan konfigurasi server, maka dilakukan konfigurasi Webserver. Pertama dengan webserver `www.franky.yyy.com`. Pertama, luffy membutuhkan webserver dengan DocumentRoot pada `/var/www/franky.yyy.com`.
@@ -463,6 +477,8 @@ Testing
 
   ![8.1](img/8.1.png)
 
+<br>
+
 ### Nomor 9
 Setelah itu, Luffy juga membutuhkan agar url `www.franky.yyy.com/index.php/home` dapat menjadi menjadi `www.franky.yyy.com/home`.
 
@@ -491,6 +507,8 @@ Testing
 - Dari `loguetown` Buka `www.franky.B09.com/home` menggunakan lynx.
 
   ![9.1](img/9.1.png)
+
+<br>
 
 ### Nomor 10
 Setelah itu, pada subdomain `www.super.franky.yyy.com`, Luffy membutuhkan penyimpanan aset yang memiliki DocumentRoot pada `/var/www/super.franky.yyy.com`.
@@ -538,6 +556,8 @@ Testing
 
   ![10.2](img/10.2.png)
 
+<br>
+
 ### Nomor 11
 Akan tetapi, pada folder `/public`, Luffy ingin hanya dapat melakukan directory listing saja.
 
@@ -572,6 +592,8 @@ Testing
 - buka `www.super.franky.a15.com/public/css` menggunakan lynx
 
   ![11.2](img/11.2.png)
+
+<br>
 
 ### Nomor 12
 Tidak hanya itu, Luffy juga menyiapkan error file `404.html` pada folder `/error` untuk mengganti error kode pada apache.
@@ -608,6 +630,8 @@ Testing
 - Pada `loguetown` buka `www.super.franky.a15.com/index.php` menggunakan lynx
 
   ![12.1](img/12.1.png)
+
+<br>
 
 ### Nomor 13
 Luffy juga meminta Nami untuk dibuatkan konfigurasi virtual host. Virtual host ini bertujuan untuk dapat mengakses file asset `www.super.franky.yyy.com/public/js` menjadi `www.super.franky.yyy.com/js`.
@@ -650,6 +674,8 @@ Testing
 - Pada `loguetown` buka `www.super.franky.a15.com/js` menggunakan lynx
 
   ![13.1](img/13.1.png)
+
+<br>
 
 ### Nomor 14
 Dan Luffy meminta untuk web `www.general.mecha.franky.yyy.com` hanya bisa diakses dengan port 15000 dan port 15500.
@@ -729,6 +755,8 @@ Testing
 - buka `www.general.mecha.franky.a15.com:15500` menggunakan lynx.
 
   ![14.3](img/14.3.png)
+  
+<br>
 
 ### Nomor 15
 Dengan authentikasi username `luffy` dan password `onepiece` dan file di `/var/www/general.mecha.franky.yyy`.
@@ -789,6 +817,8 @@ Testing
   ![15.1](img/15.1.png)
   ![15.2](img/15.2.png)
   ![15.2](img/15.3.png)
+  
+<br>
 
 ### Nomor 16
 Dan setiap kali mengakses IP Skypie akan diahlikan secara otomatis ke `www.franky.yyy.com`.
@@ -818,6 +848,7 @@ Testing
 
   ![16.1](img/16.1.png)
 
+<br>
 
 ### Nomor 17
 Dikarenakan Franky juga ingin mengajak temannya untuk dapat menghubunginya melalui website `www.super.franky.yyy.com`, dan dikarenakan pengunjung web server pasti akan bingung dengan randomnya images yang ada, maka Franky juga meminta untuk mengganti request gambar yang memiliki substring `franky` akan diarahkan menuju `franky.png`.
